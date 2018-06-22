@@ -1,0 +1,104 @@
+<% extend('../partials/template') %>
+    <h2>
+        <%= title %>
+    </h2>
+
+    <h3> 
+    <%= formtype %>
+    </h3>
+
+    <form id="fisk_form" method="post">
+        <label for="fisk_navn">Navn</label>
+        <input type="text" name="fisk_navn" value="<%= fisk.fisk_navn %>">
+
+        <label for="fisk_farve">Farve</label>
+        <select name="fisk_farve" id="fisk_farve">
+        <%  (farver || [] ).forEach(element =>{ %>
+
+                <option value="<%=element.farve_id %>" <%= (element.farve_id==fisk.farve_id? "selected":"") %> > 
+
+                <%=element.farve_navn %>
+                
+                </option>
+
+        <% }) %>
+        </select>
+        <br>
+        <label>Køn</label>
+        <br>
+        <br>
+        <label for="fisk_han">Han
+        <input type="radio" name="fisk_koen" id="fisk_han" value="han" 
+        <%= (fisk.fisk_koen=="han" ? "checked": "")%>>
+        </label>
+
+        <label for="fisk_hun">Hun
+        <input type="radio" name="fisk_koen" id="fisk_hun" value="hun" 
+        <%= (fisk.fisk_koen=="hun" ? "checked": "")%>>
+        </label>
+        
+        <br>
+    
+    <button>Gem</button>
+    <a href="/admin/fisk" class="button2">Annuller</a>
+    </form>
+
+<% if(data.length > 0) { %>
+    <table>
+        <th>Navn</th>
+        <th>id</th>
+        <th>Farve</th>
+        <th>Køn</th>
+        <th>Ret</th>
+        <th>Slet</th>
+        <% (data || []).forEach(element =>{ %>
+            <tr>
+                <td>
+                    <%= element.fisk_navn%>
+                </td>
+                <td>
+                    <%= element.fisk_id%>
+                </td>
+                <td>
+                    <%= element.farve_navn%>
+                </td>
+                <td>
+                    <%= element.fisk_koen%>
+                </td>
+                <td>
+                    <a href="/admin/fisk/ret/<%= element.fisk_id %>" class="button2">Ret</a>
+                </td>
+                <td>
+                    <a href="/admin/fisk/slet/<%= element.fisk_id %>" class="button2" onClick="return confirm('Ønsker du at slette?')">
+                    Slet</a>
+                </td>
+                <% })%>
+            </tr>
+            <% } %>
+
+    </table>
+
+<script>
+document.querySelector('#fisk_form button').addEventListener('click', (event)=>{
+   event.preventDefault();
+
+    let form_valid = true;
+
+   let form = document.querySelector('#fisk_form');
+   // her foretages valideringen som normalt.
+
+   if(form.fisk_navn.value == ""){
+form_valid = false;
+   }
+    if(form.fisk_farve.value == ""){
+form_valid = false;
+   }
+    if(form.fisk_koen.value == ""){
+form_valid = false;
+   }
+if(form_valid == true){
+   // når valideingen er ok, sendes form data
+   form.submit();
+   }
+})
+</script>
