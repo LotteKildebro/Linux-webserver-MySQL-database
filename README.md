@@ -1,4 +1,6 @@
-<span style="color:blue">some This is Blue italic. text</span># Guide til opsætning af en Linux webserver med en MySQL database
+# Guide til opsætning af en Linux webserver med en MySQL database
+
+<span style="color:blue">some *This is Blue italic.* text</span>
 
 # Linux-server med Node.js & MySQL
 
