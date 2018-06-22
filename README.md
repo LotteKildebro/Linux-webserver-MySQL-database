@@ -1,4 +1,4 @@
-# Guide til oprettelse af server med Digital Ocean
+# Guide til oprettelse af droplet med Digital Ocean
 
 ## Opret bruger på Digital Ocean
 Link: https://cloud.digitalocean.com/
@@ -16,25 +16,17 @@ step 4: vælg et hostnavn, gør det kort og præcist som f.eks. "fisk" eller "te
 step 5: Tryk på gem, tadaaa!
 step 6: Når droplet er loaded færdigt, bliver der sendt en kode samt IP-adresse til din mail. 
 Det vil komme til at se nogenlunde således ud
-```diff-
+```diff
 Droplet Name: fisk
 IP Address: 138.68.98.235
 Username: root
 Password: 10958f86a102af2b2f7efd924c
 ```
-
-
-
-
-
+Nu er du klar til opsætning af Linux :-)
 
 # Guide til opsætning af en Linux webserver med en MySQL database
 
-```diff
--eksempel
-```
-
-# Linux-server med Node.js & MySQL
+## *Linux-server med Node.js & MySQL*
 
 ## 0. Installer Nano
 Nano er en linux tekst editor, som er simpel at bruge.
