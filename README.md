@@ -11,7 +11,7 @@ Nano er en linux tekst editor, som er simpel at bruge.
 
 *Installation*
 ```diff
--yum install nano
+yum install nano
 ```
 *Command Keys*
 Du du bruger nano, control characters (CTRL) er repræsenteret af carat (^). Eksempelvis, hvis du ønsker at skære en linje tekst ud, vil man bruge “CTRL” key efterfulgt af “K” key. Denne sekvens af kommandoer er repræsenteret som ^K i nano.
