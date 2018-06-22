@@ -1,28 +1,104 @@
-# Avanceret Webintegration - niveau Avanceret/Expert
+<span style="color:blue">some This is Blue italic. text</span># Guide til opsætning af en Linux webserver med en MySQL database
 
-Faget bygger oven på det vi har arbejdet med i Webintegration faget, her dykkes der dybere ned i NodeJS og JavaScriptens afkroge.
+# Linux-server med Node.js & MySQL
 
-Der er 10 arbejdsdage med undervisning, og derefter vil fagets emner indgå i praktisk projekt hvor færdighederne demonstreres.
+## 0. Installer Nano
+Nano er en linux tekst editor, som er rigtig let at bruge.
 
+Installation
+```
+yum install nano
+```
 
+## 1. Installer MySQL
+Installation
+```
+yum install mysql-server
+```
+Start/stop/restart
+```
+service mysqld start/stop/restart
+```
 
+Konfigurer MySQL
+```
+sudo /usr/bin/mysql_secure_installation
+```
 
-Fagets mål i følge bekendgørelsen:
-**Niveau Avanceret**
-1. Eleven kan, såvel selvstændigt som i samarbejde med andre, arbejde med databaser og objektorienteret programmering i forhold til fremstilling af dynamiske og komplekse internetsider og løsninger.
-1. Eleven kan selvstændigt udvikle og fremstille komplicerede internetløsninger ved anvendelse af såvel Klientside frameworks, som serverside programmering.
-1. Eleven kan dokumentere overholdelsen af gængse krav, standarder og normer i forbindelse med produktionen af såvel internetsider som løsninger.
+## 2. Installer Node.js
+Installation
+```
+yum install epel-release
+yum install nodejs
+yum install npm
+npm install -g n
+```
+Opdater nodejs
+```
+n lts
+n
+```
 
+**Genstart din linux-box nu.**
 
-**Niveau Expert**
-1. Eleven kan, med en case-beskrivelse, indeholdende løsning af en tidssvarende og kompleks arbejdsopgave, selvstændigt, planlægge, installere, konfigurere og dokumentere en kompleks avanceret webintegration, der omfatter databaser, objektorienteret programmering og komplicerede webløsninger, og kan herigennem demonstrere viden, færdigheder og kompetencer der ligger ud over de i faget beskrevne mål og målniveauer. Endvidere kan eleven begrunde de valgte løsninger og fremvise evner til at tilrettelægge og styre en arbejdsproces.
-1.	Endvidere kan eleven begrunde de valgte løsninger og fremvise evner til at tilrettelægge og styre en arbejdsproces.	
-1.	Eleven kan, såvel selvstændigt som i samarbejde med andre, arbejde med databaser og objektorienteret programmering i forhold til fremstilling af dynamiske og komplekse webløsninger.	
-1.	Eleven kan selvstændigt udvikle og fremstille komplicerede webløsninger ved anvendelse af såvel clientside frameworks, som serverside programmering.
-1.	Eleven kan dokumentere overholdelsen af gængse krav, standarder og normer (som fx WC3, WCAG, SEO mv.) i forbindelse med udvikling og produktionen af forskellige webløsninger.
+## 3. Installer PM2
+PM2 er en process manager til Node.js applikationer.
 
+Installation
+```
+npm install -g pm2
+```
 
+Kør PM2 ved startup
+```
+pm2 startup
+```
 
-Evalueringen foregår baseret på deltagelse og engagement i undervisningen samt demonstration af færdigheder i de praktiske projekter.
+## 4. Installer Git
+Installation
+```
+yum install git
+```
 
+Konfiguration
+```
+git config --global user.name "Dit navn"
+git config --global user.email "din@email.dk"
+```
 
+Tjek konfigurationen
+```
+nano ~/.gitconfig
+```
+
+## 5. Opret et nøglesæt til at logge ind på GitHub
+Opret nøglesæt
+```
+ssh-keygen -t rsa
+```
+
+Åbn den offentlige nøgle
+```
+nano ~/.ssh/id_rsa.pub
+
+Kopier indholdet af den offentlige nøgle til GitHub -> Settings -> SSH and GPG keys -> New SSH key
+```
+
+## 6. Opret en mappe til din applikation
+```
+mkdir ~/www
+```
+Naviger ind i mappen
+```
+cd ~/www
+```
+
+## 7. Klon dit repository fra GitHub
+```
+git clone git@github.com:brugernavn/repository
+```
+
+(og når du har en opdatering, skal du lave et pull)
+```
+git pull git@github.com:brugernavn/repository
+```
