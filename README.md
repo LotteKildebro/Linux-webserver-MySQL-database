@@ -1,3 +1,33 @@
+# Guide til oprettelse af server med Digital Ocean
+
+## Opret bruger på Digital Ocean
+Link: https://cloud.digitalocean.com/
+
+Brug skolemail til oprettelse af bruger.
+
+*E-mail: 4514756@RTS-365.dk *
+
+## Oprettelse af droplets
+
+step 1: vælg distribution CentOS version 7.5x64
+step 2: "Choose a size" vælg 1 GB 
+step 3: vælg datacenter region, det er at fortrække at vælge Amsterdam eller Frankfurt.
+step 4: vælg et hostnavn, gør det kort og præcist som f.eks. "fisk" eller "test".
+step 5: Tryk på gem, tadaaa!
+step 6: Når droplet er loaded færdigt, bliver der sendt en kode samt IP-adresse til din mail. 
+Det vil komme til at se nogenlunde således ud
+```diff-
+Droplet Name: fisk
+IP Address: 138.68.98.235
+Username: root
+Password: 10958f86a102af2b2f7efd924c
+```
+
+
+
+
+
+
 # Guide til opsætning af en Linux webserver med en MySQL database
 
 ```diff
