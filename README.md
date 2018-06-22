@@ -37,7 +37,7 @@ ssh root@138.68.98.235
 ```
 *Skriv adgangskoden du har modtaget via mailen*
 
-![Alt text](billeder/linux1.jpg?raw=true "Title")
+![linux password](billeder/linux1.jpg)
 
 *ændre den til noget mere mindeværdigt*
 
