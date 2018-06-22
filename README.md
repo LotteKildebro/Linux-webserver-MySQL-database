@@ -1,6 +1,8 @@
 # Guide til opsætning af en Linux webserver med en MySQL database
 
-These are <b style='color:red'>red words</b>
+```diff
+-eksempel
+```
 
 # Linux-server med Node.js & MySQL
 
