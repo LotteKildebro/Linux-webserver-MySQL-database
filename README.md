@@ -7,12 +7,19 @@
 # Linux-server med Node.js & MySQL
 
 ## 0. Installer Nano
-Nano er en linux tekst editor, som er rigtig let at bruge.
+Nano er en linux tekst editor, som er simpel at bruge.
 
-Installation
+*Installation*
+```diff
+-yum install nano
 ```
-yum install nano
-```
+*Command Keys*
+Du du bruger nano, control characters (CTRL) er repræsenteret af carat (^). Eksempelvis, hvis du ønsker at skære en linje tekst ud, vil man bruge “CTRL” key efterfulgt af “K” key. Denne sekvens af kommandoer er repræsenteret som ^K i nano.
+Nogle kommandoer bruger "Alt" key før det fungerer, dette er repræsenteret af bogstavet "M". En kommando repræsenteret som M-R i nano, bliver udført ved at trykke "Alt" efterfulgt af "R" key. Hvis man har Mac som jeg har, kan man nøjes med at trykke "Escape" (Esc) key, istedet for "Alt" key lige i forhold til disse kommandoer.
+
+*Lav og åben en fil*
+Skriv nano uden nogle argumenter, så vil der blive åbnet en blank fil man kan redigere i.
+Hvis du laver ændringer i filen, vil du blive bedt om at vælge et filnavn.
 
 ## 1. Installer MySQL
 Installation
