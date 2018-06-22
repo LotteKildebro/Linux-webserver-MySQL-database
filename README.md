@@ -28,6 +28,20 @@ Nu er du klar til opsætning af Linux :-)
 
 ## *Linux-server med Node.js & MySQL*
 
+## Log på 
+som Mac bruger har jeg en indbygget terminal klar til brug, men windows folk skal lige downloade putty først.
+
+*Log på med IP-Adressen*
+```
+ssh root@138.68.98.235
+```
+*Skriv adgangskoden du har modtaget via mailen*
+
+![Alt text](relative/billeder/linux1.jpg?raw=true "Title")
+
+*ændre den til noget mere mindeværdigt*
+
+
 ## 0. Installer Nano
 Nano er en linux tekst editor, som er simpel at bruge.
 
