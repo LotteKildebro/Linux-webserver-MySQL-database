@@ -258,6 +258,9 @@ sudo rm -r /stigvejen/til/mappenavn
 * 'tr'	Søg og erstat på bogstavniveau
 * 'sdiff'	Vis forskel og lav fælles sum af filerne
 
+## Problematikker
+Der kan ofte opstå problemer med forbindelse mellem droplet's og terminalen.
+Jeg har haft mange problemer med at terminalen brokker siger over fænomenet "Broken pipes", forbindelsen dør og man bliver desværre nød til at genstarte ens droplet og logge på terminalen igen. 
 
 # Opsætning af MySQL på linux-box
 
@@ -297,13 +300,49 @@ quit;
 ```
 ### Anden del
 
-Nu har vi givet root brugeren adgang, nu skal vi bruge MySQL workbench til at exportere databasen fra vores localhost dvs. fra den maskine vi udvikler på. Dernærst skal den importeres på vores Linuxmaskine.
+Nu har vi givet root brugeren adgang, nu skal vi bruge MySQL workbench til at exportere databasen fra vores localhost dvs. fra den maskine vi udvikler på. Dernærst skal den importeres på vores  .
 
 Start ud med at køre MySQL Workbench!
 
 ## 0.
 
 I venstre side har vi en local instance som forbinder til localhost, der skal vi ind og hente vores database. 
+
+Vælg Database -> Klik på server -> Tryk Data Export -> Vælg database -> Start Export
+
+*Hvis vi ser i den mappe hvor vores database ligger, kan vi se at alle tabellerne er 
+omdannet til SQL filer, så det er jo herligt! :-)*
+
+## 1.
+
+Nu skal vi importere til vores Linuxmaskine, så vi skal ha' lavet en ny forbindelse.
+
+* Sæt IP-adressen fra serveren ind i hostname
+* Angiv connection name
+* Log ind med root, angiv adgangskode hvis der er behov for det.
+* Så er forbindelsen oprettet, og nu kan man logge ind 
+* Så er vi logget ind på MySQL serveren
+
+## 2. 
+
+Ingen Databaser? Hvad gør vi så? Vi skal oprette den database vi skal importere data til
+
+* Klik på det cylinderformede ikon i top venstre hjørne -> tryk create a new schema 
+* Skriv database navnet -> tryk apply
+
+## 3. 
+
+tilføjelse af tabeller
+
+* Klik på server -> Data import
+* Import fra en dumb projektmappe 
+* find mappen og vælg databasen
+* Start import
+* tryk genopfrisk for at være sikker på at alt data'en er lagt ind på databasen
+
+# FINN 
+
+
 
 
 
