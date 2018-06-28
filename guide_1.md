@@ -152,9 +152,9 @@ cat ~/.ssh/id_rsa.pub
 Nøgle kommer til at ligne noget alá dette:
 *ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAx5/Z2hdHIgbG2Kpr0VZ1/dDf1KWWpD
 UZROQz0C6GArVLzAkUsutqc0R1Zo5yNVr7gy/rV7khXTf10Sgv7kMTrTQzR6ocTbHNvien
-
 GG3QQJRqEVfvzs
-gTw/ejYqjFh8RETkE9rli2DGfRk79XxA7LlCaosTw5RZWl57HzOGz3aYzrL+urtpfQS3XPI4/gUv1GtCt+9UAqr6tDmoKzHM6kvIPunL7GGM5oZOOBmtYizIV7gLBu4SzZ2LAVPuXc53DwUYpV2BvIZcP7OCJVrmYa2D4D3TYhg6b1BJeapqL2WpRhG1P/LMtcdZ9Wf5t/3OdAXWEtfv/DCczSXrZQPIhqOQ== root@fisk*
+gTw/ejYqjFh8RETkE9rli2DGfRk79XxA7LlCaosTw5RZWl57HzOGz3aYzrL+urtpfQS3XPI4/gUv1GtCt+9UAqr6tDmoKzHM6kvIPunL7GGM5oZOOBmtYizIV7gLBu4SzZ2LAVPuXc53DwUYpV2BvIZcP7OCJVrmYa2D4
+D3TYhg6b1BJeapqL2WpRhG1P/LMtcdZ9Wf5t/3OdAXWEtfv/DCczSXrZQPIhqOQ== root@fisk*
 
 Kopier indholdet af den offentlige nøgle til GitHub -> Settings -> SSH and GPG keys -> New SSH key
 ```
