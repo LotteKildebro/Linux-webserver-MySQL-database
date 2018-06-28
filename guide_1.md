@@ -98,6 +98,7 @@ yum install npm
 sudo npm config set strict-ssl false
 npm install -g n
 ```
+
 Opdater nodejs
 ```
 n lts
@@ -106,6 +107,11 @@ n
 
 **Genstart din linux-box nu.**
 
+tjek node versionen
+
+```
+node -v
+```
 ## 3. Installer PM2
 PM2 er en process manager til Node.js applikationer.
 
