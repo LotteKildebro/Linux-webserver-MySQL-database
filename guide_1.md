@@ -60,6 +60,8 @@ Hvis du laver ændringer i filen, vil du blive bedt om at vælge et filnavn.
 *Godt tip: Hvis der er en module der ikke kan installeres eller en fil man ikke kan få adgang til, prøv at bruge sudo foran ens kommando*
 
 ## 1. Installer MySQL
+MySQL er en flertrådet SQL-databaseserver som understøtter mange samtidige brugere. SQL (Structured Query Language) er det mest populære databasesprog i dag. MySQL er et klient/server-program der består af en server (mysqld) og mange forskellige klientprogrammer.
+
 Installation
 ```
 yum install mysql-server
@@ -73,8 +75,15 @@ Konfigurer MySQL
 ```
 sudo /usr/bin/mysql_secure_installation
 ```
+Når du har MySQL installeret på din droplet, kan du få adgang til MySQL shell ved at skirve den følgende kommando
+
+```
+mysql -u root -p
+```
 
 ## 2. Installer Node.js
+Node.js er et open source, cross-platform runtime system til udvikling af server-side webapplikationer. Node.js er skrevet i JavaScript og kan køres i node.js runtime på en bred vifte af platforme, herunder Microsoft Windows, Google Chrome OS, Linux, FreeBSD, Apple OS X,IBM AIX, IBM System z og IBM i. Node.js er hostet og støttet af Node.js Foundation, et samarbejdsprojekt hos Linux Foundation.
+
 Installation
 ```
 yum install epel-release
@@ -133,6 +142,9 @@ nano ~/.ssh/id_rsa.pub
 *skriv dette for at åbne nøglen i terminalen*
 
 cat ~/.ssh/id_rsa.pub
+
+Nøgle kommer til at ligne noget alá dette:
+*ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAx5/Z2hdHIgbG2Kpr0VZ1/dDf1KWWpDUZROQz0C6GArVLzAkUsutqc0R1Zo5yNVr7gy/rV7khXTf10Sgv7kMTrTQzR6ocTbHNvienGG3QQJRqEVfvzsgTw/ejYqjFh8RETkE9rli2DGfRk79XxA7LlCaosTw5RZWl57HzOGz3aYzrL+urtpfQS3XPI4/gUv1GtCt+9UAqr6tDmoKzHM6kvIPunL7GGM5oZOOBmtYizIV7gLBu4SzZ2LAVPuXc53DwUYpV2BvIZcP7OCJVrmYa2D4D3TYhg6b1BJeapqL2WpRhG1P/LMtcdZ9Wf5t/3OdAXWEtfv/DCczSXrZQPIhqOQ== root@fisk*
 
 Kopier indholdet af den offentlige nøgle til GitHub -> Settings -> SSH and GPG keys -> New SSH key
 ```
