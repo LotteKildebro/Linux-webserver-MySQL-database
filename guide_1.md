@@ -174,9 +174,9 @@ git clone git@github.com:brugernavn/repository
 git pull git@github.com:brugernavn/repository
 ```
 
-#Opsætning af MySQL på linux-box
+# Opsætning af MySQL på linux-box
 
-###Første del 
+### Første del 
 
 ## 0.
 Vi skal først give nogle tilladelser før vi kan logge på MySQL server
