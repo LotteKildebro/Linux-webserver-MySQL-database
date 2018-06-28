@@ -181,18 +181,18 @@ git pull git@github.com:brugernavn/repository
 ## 0.
 Vi skal først give nogle tilladelser før vi kan logge på MySQL server
 
-´´´
+```
 mysql -p
-´´´
+```
 p'et står får password, så du skal skrive dit password til root brugeren.
 
 ## 1.
 Dernærst giv root brugeren lov til at logge ind fra andre adresser end localhost.
 
-´´´
+```
 GRANT ALL ON *.* TO 'root'@'%'
 
-´´´
+```
 Dette *.* betyder 'alle databaser samt alle tabeller' dvs. at brugeren får adgang til alle databaser samt tabeller på MySQL serveren.
 
 % står for alle host dvs root må gøre alle handlinger alle databaser samt tabeller
@@ -200,20 +200,25 @@ Dette *.* betyder 'alle databaser samt alle tabeller' dvs. at brugeren får adga
 ## 2. 
 Sæt kodeord til root-brugeren når man logger på fra andre adresser end localhost
 
-´´´
+```
 SET PASSWORD FOR 'root'@'%' - PASSWORD:('HetSkriverDuDitPassword');
 
-´´´
+```
 
 Til sidst skal vi lige ud af MySQL og ud i vores hjemmemappe på linuxmaskinen igen, skriv derfor :
 
-´´´
+```
 quit;
-´´´
+```
 ### Anden del
 
-Nu har vi givet root brugeren adgang, nu skal vi bruge MySQL workbench
+Nu har vi givet root brugeren adgang, nu skal vi bruge MySQL workbench til at exportere databasen fra vores localhost dvs. fra den maskine vi udvikler på. Dernærst skal den importeres på vores Linuxmaskine.
+
+Start ud med at køre MySQL Workbench!
+
 ## 0.
+
+I venstre side har vi en local instance som forbinder til localhost, der skal vi ind og hente vores database. 
 
 
 
