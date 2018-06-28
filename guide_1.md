@@ -57,6 +57,8 @@ Nogle kommandoer bruger "Alt" key før det fungerer, dette er repræsenteret af 
 Skriv nano uden nogle argumenter, så vil der blive åbnet en blank fil man kan redigere i.
 Hvis du laver ændringer i filen, vil du blive bedt om at vælge et filnavn.
 
+*Godt tip: Hvis der er en module der ikke kan installeres eller en fil man ikke kan få adgang til, prøv at bruge sudo foran ens kommando*
+
 ## 1. Installer MySQL
 Installation
 ```
