@@ -173,6 +173,32 @@ git clone git@github.com:brugernavn/repository
 ```
 git pull git@github.com:brugernavn/repository
 ```
+## Ekstra: gode kommandoer at have ved hånden!
+
+remove file
+```
+rm -f <file>
+```
+remove folder directory
+
+Note: Det er hvis du er i det samme level af den mappe du skal slette i terminalen
+
+```
+sudo rm -rf mappenavn
+```
+Hvis du ikke er i samme level brug:
+
+```
+sudo rm -r /stigvejen/til/mappenavn
+```
+
+FYI: du kan bruge bogstaverne -f, -r, -v:
+
+⋅⋅* -f = ignorer ikke eksisterende filer, never prompt
+⋅⋅* -r = fjerne filer og diroctory
+⋅⋅* -v = for at forklare hvad der sker
+
+
 
 # Opsætning af MySQL på linux-box
 
