@@ -9,7 +9,7 @@ Brug skolemail til oprettelse af bruger.
 
 ## Oprettelse af droplets
 
-step 1: vælg distribution CentOS version 7.5x64
+step 1: vælg distribution CentOS version 6.9x32
 step 2: "Choose a size" vælg 1 GB 
 step 3: vælg datacenter region, det er at fortrække at vælge Amsterdam eller Frankfurt.
 step 4: vælg et hostnavn, gør det kort og præcist som f.eks. "fisk" eller "test".
@@ -37,7 +37,7 @@ ssh root@138.68.98.235
 ```
 *Skriv adgangskoden du har modtaget via mailen*
 
-![linux password](billeder/linux1.jpg)
+
 
 *ændre den til noget mere mindeværdigt*
 
@@ -127,6 +127,10 @@ ssh-keygen -t rsa
 Åbn den offentlige nøgle
 ```
 nano ~/.ssh/id_rsa.pub
+
+*skriv dette for at åbne nøglen i terminalen*
+
+cat ~/.ssh/id_rsa.pub
 
 Kopier indholdet af den offentlige nøgle til GitHub -> Settings -> SSH and GPG keys -> New SSH key
 ```
