@@ -10,11 +10,17 @@ Brug skolemail til oprettelse af bruger.
 ## Oprettelse af droplets
 
 step 1: vælg distribution CentOS version 6.9x32
+
 step 2: "Choose a size" vælg 1 GB 
+
 step 3: vælg datacenter region, det er at fortrække at vælge Amsterdam eller Frankfurt.
+
 step 4: vælg et hostnavn, gør det kort og præcist som f.eks. "fisk" eller "test".
+
 step 5: Tryk på gem, tadaaa!
+
 step 6: Når droplet er loaded færdigt, bliver der sendt en kode samt IP-adresse til din mail. 
+
 Det vil komme til at se nogenlunde således ud
 ```diff
 Droplet Name: fisk
