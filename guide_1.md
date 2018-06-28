@@ -194,9 +194,9 @@ sudo rm -r /stigvejen/til/mappenavn
 
 FYI: du kan bruge bogstaverne -f, -r, -v:
 
-⋅⋅* -f = ignorer ikke eksisterende filer, never prompt
-⋅⋅* -r = fjerne filer og diroctory
-⋅⋅* -v = for at forklare hvad der sker
+* -f = ignorer ikke eksisterende filer, never prompt
+* -r = fjerne filer og diroctory
+* -v = for at forklare hvad der sker
 
 
 
