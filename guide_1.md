@@ -95,6 +95,7 @@ Installation
 yum install epel-release
 yum install nodejs
 yum install npm
+sudo npm config set strict-ssl false
 npm install -g n
 ```
 Opdater nodejs
