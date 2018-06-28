@@ -192,12 +192,56 @@ Hvis du ikke er i samme level brug:
 sudo rm -r /stigvejen/til/mappenavn
 ```
 
-FYI: du kan bruge bogstaverne -f, -r, -v:
+### FYI: du kan bruge bogstaverne -f, -r, -v:
 
 * -f = ignorer ikke eksisterende filer, never prompt
 * -r = fjerne filer og diroctory
 * -v = for at forklare hvad der sker
 
+### brugsanvisninger
+
+* 'man'	Hjælp til enkelte kommandoer
+* 'info'	Hjælp til enkelte kommandoer
+* 'apropos'	Vis relevante komandoer
+
+### Filhåndtering
+
+* 'mv'	Flyt og/eller omdøb filer
+* 'cp'	Kopiér filer og kataloger
+* 'ln'	Opret henvisning til fil eller katalog
+* 'mkdir'	Opret tomt katalog
+* 'rmdir'	Slet tomt katalog
+* 'rm'	Slet filer og/eller kataloger
+
+### Filsøgning
+
+* 'ls'	Vis filer og kataloger
+* 'pwd'	Vis nuværende katalog
+* 'find'	Søg efter filer og kataloger
+* 'locate'	Søg efter filer og kataloger – i database
+* 'grep'	Søg efter tekst i filer og/eller strøm
+* 'df'	Vis pladsforbrug på filsystemer
+* 'du'	Vis pladsforbrug i kataloger
+
+### Rettighedsstyring
+
+* 'su'	Skift identitet (bruger)
+* 'newgrp'	Skift identitet (gruppe)
+* 'chown'	Ændr ejerskab af filer og kataloger
+* 'chmod'	Ændr adgangsrettigheder til filer og kataloger
+* 'w'	Vis aktive brugere
+* 'who'	Vis identitet
+* 'passwd'	Skift adgangskode
+
+### Testmodifikationsprogrammer
+* 'cmp'	Vis forskelle mellem to filer
+* 'diff'	Vis forskelle mellem to filer
+* 'comm'	Vis forskelle mellem to filer
+* 'patch'	Omgør forskelle
+* 'cut'	Udvælg søjler
+* 'wc'	Tæl tegn, ord og linjer
+* 'tr'	Søg og erstat på bogstavniveau
+* 'sdiff'	Vis forskel og lav fælles sum af filerne
 
 
 # Opsætning af MySQL på linux-box
